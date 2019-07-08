@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/grid_item_bg_normal"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_default" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="有缘千里来相会"
+                android:textColor="@color/txt_title"
+                android:textSize="16sp" />
+
+            <RatingBar
+                android:id="@+id/rb_star"
+                style="@android:style/Widget.RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_marginTop="5dp"
+                android:isIndicator="true"
+                android:progressDrawable="@drawable/ratingbar_drawable" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--下载，版本-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="下载："
+            android:textSize="14sp"
+            android:textColor="@color/txt_small"
+            android:id="@+id/tv_download_num"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="版本："
+            android:textSize="14sp"
+            android:textColor="@color/txt_small"
+            android:id="@+id/tv_version"/>
+
+    </LinearLayout>
+
+    <!--日期，大小-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="日期："
+            android:textSize="14sp"
+            android:textColor="@color/txt_small"
+            android:id="@+id/tv_date"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="大小："
+            android:textSize="14sp"
+            android:textColor="@color/txt_small"
+            android:id="@+id/tv_size"/>
+
+    </LinearLayout>
+
+</LinearLayout>

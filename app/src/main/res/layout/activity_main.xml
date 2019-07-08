@@ -5,7 +5,38 @@
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
+    <!--主界面的布局-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--指示器-->
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/magic_indicator6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_navigator_height"
+            android:layout_marginTop="@dimen/navigator_margin_top" />
+        <!--ViewPager-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+    <!--菜单的布局-->
+    <LinearLayout
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/menu_list"/>
+
+    </LinearLayout>
 
 
 </android.support.v4.widget.DrawerLayout>
